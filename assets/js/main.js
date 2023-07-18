@@ -26,9 +26,8 @@ sizes.onchange = (e) => {
    let imgAttr = image.getAttribute("src");
    downloadBtn.setAttribute("href", imgAttr);
  } else {
-   // downloadBtn.setAttribute("href", `${document.querySelector('canvas').toDataURL()}`);
-   e.preventDefault();
-   isEmptyInput();
+  
+ downloadBtn.setAttribute("href", `${document.querySelector('canvas').toDataURL()}`);
  }
 });
 
